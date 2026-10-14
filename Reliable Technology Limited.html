@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reliable Technology Limited | Digital Solutions & ICT Training</title>
+<meta name="description" content="Explore professional website development, e-commerce solutions, ICT training, and digital transformation services from Reliable Technology Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101C35;--blue:#1769E0;--bg:#F5F8FC;--surface:#fff;--ink:#101C35;--muted:#65758B;--line:#dde5f0;--hero-bg:#101C35;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1326;--surface:#131f3a;--ink:#eaf0fa;--muted:#9aa9bf;--line:#243558;--blue:#4a8dff;--hero-bg:#0a1122}}
+:root[data-theme="dark"]{--bg:#0b1326;--surface:#131f3a;--ink:#eaf0fa;--muted:#9aa9bf;--line:#243558;--blue:#4a8dff;--hero-bg:#0a1122}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Manrope,Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font-weight:800;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--blue)}
+nav{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none;background:var(--blue);color:#fff;border:2px solid var(--blue);cursor:pointer;font:inherit;font-weight:700}
+.btn.alt{background:transparent;color:inherit;border-color:currentColor}
+nav .btn{padding:8px 16px;font-size:14px;color:#fff}
+@media(max-width:760px){nav a:not(.btn){display:none}}
+.hero{background:var(--hero-bg);color:var(--hero-ink);padding:84px 0 76px}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;letter-spacing:-.025em;margin:0 0 20px;font-weight:800;max-width:15ch}
+.hero p{max-width:56ch;color:#c4d0e4;font-size:18px;margin:0 0 30px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.alt{color:#fff}
+.hero .tag{margin-top:46px;display:flex;gap:28px;flex-wrap:wrap;color:#9fb2d0;font-size:14px;border-top:1px solid #243558;padding-top:20px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.02em;line-height:1.15;margin:0 0 14px;font-weight:800}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 36px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.pillars .card{border-top:4px solid var(--blue)}
+.alt-bg{background:var(--surface);border-block:1px solid var(--line)}
+.alt-bg .card{background:var(--bg)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:14px;color:var(--muted);font-weight:700}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;white-space:nowrap}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s;border-left:3px solid var(--line);margin-left:6px}
+.steps li{counter-increment:s;padding:0 0 26px 28px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:-17px;top:0;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;font-size:14px;display:grid;place-items:center}
+.steps b{display:block;font-size:17px}
+.steps span{color:var(--muted);font-size:15px}
+.soon{display:inline-block;font-size:13px;font-weight:700;color:var(--blue);margin-top:14px}
+.cta{background:var(--navy);color:#fff;border-radius:14px;padding:40px;display:grid;gap:30px;grid-template-columns:1fr 1fr}
+@media(max-width:800px){.cta{grid-template-columns:1fr;padding:26px}}
+.cta h2{color:#fff}
+.cta p{color:#c4d0e4;margin:0}
+form{display:grid;gap:12px}
+label{font-size:14px;font-weight:700;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:11px 12px;border-radius:8px;border:1px solid #33486e;background:#0c1730;color:#fff;width:100%}
+#msg{font-size:14px;color:#9fe0b0;min-height:1.4em;margin:0}
+footer{padding:36px 0 44px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Reliable<span>Tech</span> Limited</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#academy">ICT Academy</a><a href="#projects">Projects</a><a href="#about">About</a><a class="btn" href="#contact">Request a consultation</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1>Empowering growth through reliable technology.</h1>
+<p>We help businesses, organisations, and individuals achieve more through practical digital solutions, professional technology services, and ICT education that builds real skills.</p>
+<div class="row"><a class="btn" href="#services">Explore our services</a><a class="btn alt" href="#contact">Request a consultation</a></div>
+<div class="tag"><span>Technology solutions &amp; software development</span><span>ICT education &amp; digital skills</span><span>Digital transformation &amp; growth</span></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+<h2>Your partner in digital progress</h2>
+<p class="lead">Technology is changing how people learn, work, and do business. We help clients navigate that change with practical solutions, clear communication, and a focus on measurable value. Our philosophy is simple: technology should work for people, not the other way around.</p>
+<div class="grid pillars">
+<div class="card"><h3>Technology solutions</h3><p>Websites, digital platforms, e-commerce, and systems that address real business needs.</p></div>
+<div class="card"><h3>ICT education</h3><p>Practical technology skills for individuals, students, professionals, and organisations.</p></div>
+<div class="card"><h3>Digital transformation</h3><p>Stronger digital presence, better operations, and technology adopted where it fits.</p></div>
+</div></div></section>
+
+<section id="services" class="alt-bg"><div class="wrap">
+<h2>What we do</h2>
+<p class="lead">Six service areas, each designed around the problem you need solved rather than the tool used to solve it.</p>
+<div class="grid">
+<div class="card"><h3>Website design &amp; development</h3><p>Responsive corporate sites, portfolios, landing pages, content management, redesigns, and maintenance.</p></div>
+<div class="card"><h3>E-commerce</h3><p>Online stores, product catalogues, payment integration, order management, and WhatsApp commerce.</p></div>
+<div class="card"><h3>Custom software &amp; business systems</h3><p>Client portals, booking systems, records management, workflow automation, and dashboards.</p></div>
+<div class="card"><h3>Digital marketing &amp; visibility</h3><p>SEO, Google Business Profile setup, social media strategy, Meta advertising support, and analytics.</p></div>
+<div class="card"><h3>ICT training</h3><p>Practical programmes from computer basics to web development, digital marketing, and AI tools.</p></div>
+<div class="card"><h3>IT consulting</h3><p>Needs assessments, transformation planning, systems selection, and implementation support.</p></div>
+</div></div></section>
+
+<section id="academy"><div class="wrap">
+<h2>ICT Academy</h2>
+<p class="lead">Digital literacy matters for education, employment, and enterprise. Our programmes combine guided instruction, hands-on exercises, real projects, and assessments, whatever your starting level. Learners receive company-issued completion certificates.</p>
+<div class="tw"><table>
+<tr><th>Programme</th><th>What you learn</th></tr>
+<tr><td>Computer Fundamentals</td><td>Computer operations, file management, typing, internet use</td></tr>
+<tr><td>Microsoft Office &amp; Productivity</td><td>Word, Excel, PowerPoint, digital documentation</td></tr>
+<tr><td>Graphic Design</td><td>Canva, design principles, visual communication</td></tr>
+<tr><td>Website Development</td><td>HTML, CSS, website publishing, introductory web development</td></tr>
+<tr><td>Digital Marketing</td><td>Social media marketing, Meta Ads, SEO, content strategy</td></tr>
+<tr><td>Artificial Intelligence</td><td>AI fundamentals, prompt writing, productivity tools</td></tr>
+<tr><td>Business Digital Skills</td><td>Google Workspace, digital collaboration, online business tools</td></tr>
+<tr><td>E-commerce &amp; Entrepreneurship</td><td>Online stores, WhatsApp Business, digital selling</td></tr>
+</table></div>
+<p class="lead" style="margin:24px 0 18px">Our flagship is a three-month foundational ICT programme: essential computer skills, productivity apps, internet literacy, digital marketing basics, introductory AI, and a final practical project.</p>
+<a class="btn" href="#contact">Enquire about a course</a>
+</div></section>
+
+<section id="process" class="alt-bg"><div class="wrap">
+<h2>How we deliver</h2>
+<p class="lead">A clear process, so you always know what happens next.</p>
+<ol class="steps">
+<li><b>Discovery and consultation</b><span>We learn your business, goals, audience, and expectations.</span></li>
+<li><b>Research and planning</b><span>Requirements become a plan with defined scope, deliverables, and timelines.</span></li>
+<li><b>Design and development</b><span>We build the agreed solution for usability, performance, and accessibility.</span></li>
+<li><b>Testing and quality assurance</b><span>Functionality, responsiveness, and compatibility are checked before delivery.</span></li>
+<li><b>Deployment and handover</b><span>We launch, document, and show you how to run it.</span></li>
+<li><b>Maintenance and improvement</b><span>Where agreed, ongoing support and updates as your needs change.</span></li>
+</ol></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Our projects</h2>
+<p class="lead">Selected work. Full case studies, with screenshots and verified outcomes, are being prepared with client approval.</p>
+<div class="grid">
+<div class="card"><h3>Legal services website</h3><p>Corporate website and digital presence for a law firm, with improvements to search visibility, contact accessibility, and Google Business Profile.</p><span class="soon">Case study coming soon</span></div>
+<div class="card"><h3>Premium footwear e-commerce</h3><p>Online store planning for a fashion brand: product presentation, shopping experience, and digital brand positioning.</p><span class="soon">Case study coming soon</span></div>
+<div class="card"><h3>Beginner ICT programme</h3><p>Structured digital skills course for beginner students, with practical projects and a graduation.</p><span class="soon">Case study coming soon</span></div>
+</div></div></section>
+
+<section id="why" class="alt-bg"><div class="wrap">
+<h2>Why choose us</h2>
+<div class="grid" style="margin-top:28px">
+<div class="card"><h3>Built around real needs</h3><p>We start with the purpose behind a project, not the technology.</p></div>
+<div class="card"><h3>Collaborative delivery</h3><p>Clear communication and defined expectations from kickoff to handover.</p></div>
+<div class="card"><h3>One partner, several skills</h3><p>Development, education, and business improvement under one roof.</p></div>
+<div class="card"><h3>Made to last</h3><p>Solutions that are easy to use today and ready to grow tomorrow.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="cta">
+<div><h2>Request a consultation</h2><p>Tell us what you want to achieve. We will follow up to understand your goals and recommend the right next step, whether that is a project quote or a place on a course.</p></div>
+<form id="f" novalidate>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Organisation (optional)<input name="org" autocomplete="organization"></label>
+<label>Email or WhatsApp number<input name="contact" required></label>
+<label>I am interested in<select name="svc"><option>A website</option><option>An online store</option><option>Business software</option><option>Digital marketing</option><option>ICT training</option><option>IT consulting</option></select></label>
+<label>Brief description<textarea name="msg" rows="3"></textarea></label>
+<button class="btn" type="submit">Send enquiry</button>
+<p id="msg" role="status"></p>
+</form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<div><b>Reliable Technology Limited</b><br>Technology that works. Solutions that matter.</div>
+<div>Address, phone, email, and CAC registration details to be added before launch.<br>&copy; 2026 Reliable Technology Limited</div>
+</div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var m=document.getElementById('msg'),f=e.target;
+if(!f.name.value.trim()||!f.contact.value.trim()){m.style.color='#ffb4b4';m.textContent='Enter your name and an email or WhatsApp number.';return}
+m.style.color='#9fe0b0';m.textContent='Preview only: this form is not connected yet. Connect it to your email or WhatsApp before launch.';
+});
+</script>
+</body>
+</html>
